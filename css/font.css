@@ -1,0 +1,32 @@
+@font-face {
+    font-family:Abel;
+    src: url(../font/Abel/Abel-Regular.ttf);
+}
+ @font-face {
+     font-family: Livvic;
+     src: url(../font/Livvic/Livvic-Regular.ttf);
+ }
+ @font-face {
+     font-family: Roboto;
+     src: url(../font/Roboto/Roboto-Regular.ttf);
+ }
+ @font-face {
+     font-family: Anton;
+     src: url(../font/Anton/Anton-Regular.ttf);
+ }
+ @font-face {
+     font-family: Josefin_Sans;
+     src: url(../font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+ }
+ @font-face {
+     font-family: Lexend_Deca;
+     src: url(../font/Lexend_Deca/LexendDeca-Regular.ttf);
+ }
+ @font-face {
+     font-family: Lobster;
+     src: url(../font/Lobster/LobsterTwo-Regular.ttf);
+ }
+ @font-face {
+     font-family: Playball;
+     src: url(../font/Playball/Playball-Regular.ttf);
+ }

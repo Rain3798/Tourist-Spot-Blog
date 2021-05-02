@@ -1,0 +1,290 @@
+@import url('../css/font.css');
+
+html,body{
+
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+:root{
+
+/*----- color ------------*/
+
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --bg: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+   --btn:  linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+
+   --Lexend_Deca: 'Lexend_Deca', cursive;
+   --Abel: 'Abel', cursive;
+   --Anton: 'Anton', cursive;
+   --Josefin-Sans: 'Josefin-Sans', cursive;
+   --Livvic: 'Livvic', cursive;
+   --Roboto: 'Roboto', cursive;
+
+
+}
+
+
+
+
+/*------------------------ Global -------------------------*/
+a{
+    text-decoration: none;
+}
+
+.flex-row{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+
+    font-family: Playball;
+    font-size: 2.5rem;
+}
+
+h3{
+    font-family: Abel;
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+/*----------x----------- Global ----------x--------------------*/
+
+/*------------------------------ navbar -----------------------*/
+.nav{
+
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+     
+}
+
+.nav .nav-items .nav-link:hover{
+
+    background-color:skyblue;
+}
+.nav .nav-items .nav-link:hover a{
+color: white;
+   
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .toggle-collapse{
+
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+
+    font-size: 1.4rem;
+    color: grey;
+}
+
+.nav .social i{
+    padding: 0 .2rem;
+}
+.nav .social{
+    padding: 1.4rem 0;
+}
+.nav .social i:hover{
+   color: blue;
+}
+
+
+.nav .nav-items{
+    
+    display: flex;
+    margin: 0;
+    font-family: Abel;
+    font-size: 1.1rem;
+}
+
+.nav .nav-brand a{
+
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block ;
+    font-family: Lexend_Deca;
+    color: black;
+}
+
+.nav .nav-items a{
+    color: black;
+}
+
+.nav .social a{
+    color: black;
+}
+
+.nav .nav-menu{
+
+   justify-content: space-between;
+
+}
+
+
+/*---x-------------------- navbar ---------------x--------*/
+
+/*-------------- Main site-------------------------------- */
+
+main .site-title{
+    background: url(../assets/bg.jpg);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+main .site-title .site-bg{
+
+    padding-top: 5rem;
+    text-align: center;
+    color: black;
+}
+
+main .site-title h1,h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background:var(--bg);
+}
+
+main .site-title .btn:hover{
+    border: 1px solid white;
+    color: white;
+}
+
+/*-------x------- Main site------------x-------------------- */
+
+
+
+/*-----------------Corousel---------------------------------*/
+
+main .blog{
+      background: url(../assets/Abract01.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      height: 100vh;
+      width: 100%;
+      background-size: 65%;
+}
+
+main .blog .blog-post{
+
+    padding-top: 6rem;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog-content .blog-title{
+    padding: 2rem 0;
+
+}
+
+main .blog-content .btn-blog{
+
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+}
+
+main .blog-content span{
+    display: block;
+}
+
+section .container .owl-na v{
+
+    position: absolute;
+    top: 5%;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.owl-nav .owl-nav-prev, .owl-nav .owl-nav-next{
+
+    color: black;
+    background: transparent;
+    font-size: 2rem;
+
+}
+
+.owl-theme .owl-nav[class*='owl-']:hover{
+    background: transparent;
+    color: gray;
+}
+
+
+/*--------x---------Corousel-------------------x--------------*/
+
+
+
+/*-------------- viewport-------------------------------- */
+
+@media only screen and (max-width:750px){
+
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
